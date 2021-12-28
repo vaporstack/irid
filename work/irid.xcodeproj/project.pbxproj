@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		577C7C6B2778B723008202DD /* irid_render.h in Headers */ = {isa = PBXBuildFile; fileRef = 577C7C692778B723008202DD /* irid_render.h */; };
+		577C7C6C2778B723008202DD /* irid_render.c in Sources */ = {isa = PBXBuildFile; fileRef = 577C7C6A2778B723008202DD /* irid_render.c */; };
+		57807895277777A70017586E /* irid_spline.c in Sources */ = {isa = PBXBuildFile; fileRef = 57807885277777A70017586E /* irid_spline.c */; };
+		57807896277777A70017586E /* irid_layer.h in Headers */ = {isa = PBXBuildFile; fileRef = 57807886277777A70017586E /* irid_layer.h */; };
+		57807897277777A70017586E /* irid_grid.c in Sources */ = {isa = PBXBuildFile; fileRef = 57807887277777A70017586E /* irid_grid.c */; };
+		57807898277777A70017586E /* irid_color.h in Headers */ = {isa = PBXBuildFile; fileRef = 57807888277777A70017586E /* irid_color.h */; };
+		57807899277777A70017586E /* irid_symmetry.h in Headers */ = {isa = PBXBuildFile; fileRef = 57807889277777A70017586E /* irid_symmetry.h */; };
+		5780789A277777A70017586E /* irid_palette.h in Headers */ = {isa = PBXBuildFile; fileRef = 5780788A277777A70017586E /* irid_palette.h */; };
+		5780789B277777A70017586E /* irid_stroke.c in Sources */ = {isa = PBXBuildFile; fileRef = 5780788B277777A70017586E /* irid_stroke.c */; };
+		5780789C277777A70017586E /* irid_tile.c in Sources */ = {isa = PBXBuildFile; fileRef = 5780788C277777A70017586E /* irid_tile.c */; };
+		5780789D277777A70017586E /* irid_grid.h in Headers */ = {isa = PBXBuildFile; fileRef = 5780788D277777A70017586E /* irid_grid.h */; };
+		5780789E277777A70017586E /* irid_layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5780788E277777A70017586E /* irid_layer.c */; };
+		5780789F277777A70017586E /* irid_spline.h in Headers */ = {isa = PBXBuildFile; fileRef = 5780788F277777A70017586E /* irid_spline.h */; };
+		578078A0277777A70017586E /* irid_palette.c in Sources */ = {isa = PBXBuildFile; fileRef = 57807890277777A70017586E /* irid_palette.c */; };
+		578078A1277777A70017586E /* irid_color.c in Sources */ = {isa = PBXBuildFile; fileRef = 57807891277777A70017586E /* irid_color.c */; };
+		578078A2277777A70017586E /* irid_symmetry.c in Sources */ = {isa = PBXBuildFile; fileRef = 57807892277777A70017586E /* irid_symmetry.c */; };
+		578078A3277777A70017586E /* irid_tile.h in Headers */ = {isa = PBXBuildFile; fileRef = 57807893277777A70017586E /* irid_tile.h */; };
+		578078A4277777A70017586E /* irid_stroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 57807894277777A70017586E /* irid_stroke.h */; };
+		578078A9277777B00017586E /* irid.c in Sources */ = {isa = PBXBuildFile; fileRef = 578078A7277777B00017586E /* irid.c */; };
+		578078AA277777B00017586E /* irid.h in Headers */ = {isa = PBXBuildFile; fileRef = 578078A8277777B00017586E /* irid.h */; };
+		579127452778F60000EE3A74 /* irid_sim.h in Headers */ = {isa = PBXBuildFile; fileRef = 579127432778F60000EE3A74 /* irid_sim.h */; };
+		579127462778F60000EE3A74 /* irid_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = 579127442778F60000EE3A74 /* irid_sim.c */; };
+		57D052AB2778D18F00070C4C /* irid_tesselate.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D052A92778D18F00070C4C /* irid_tesselate.h */; };
+		57D052AC2778D18F00070C4C /* irid_tesselate.c in Sources */ = {isa = PBXBuildFile; fileRef = 57D052AA2778D18F00070C4C /* irid_tesselate.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		577C7C692778B723008202DD /* irid_render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irid_render.h; sourceTree = "<group>"; };
+		577C7C6A2778B723008202DD /* irid_render.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = irid_render.c; sourceTree = "<group>"; };
+		5780782827772D560017586E /* libirid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libirid.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57807885277777A70017586E /* irid_spline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_spline.c; sourceTree = "<group>"; };
+		57807886277777A70017586E /* irid_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_layer.h; sourceTree = "<group>"; };
+		57807887277777A70017586E /* irid_grid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_grid.c; sourceTree = "<group>"; };
+		57807888277777A70017586E /* irid_color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_color.h; sourceTree = "<group>"; };
+		57807889277777A70017586E /* irid_symmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_symmetry.h; sourceTree = "<group>"; };
+		5780788A277777A70017586E /* irid_palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_palette.h; sourceTree = "<group>"; };
+		5780788B277777A70017586E /* irid_stroke.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_stroke.c; sourceTree = "<group>"; };
+		5780788C277777A70017586E /* irid_tile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_tile.c; sourceTree = "<group>"; };
+		5780788D277777A70017586E /* irid_grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_grid.h; sourceTree = "<group>"; };
+		5780788E277777A70017586E /* irid_layer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_layer.c; sourceTree = "<group>"; };
+		5780788F277777A70017586E /* irid_spline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_spline.h; sourceTree = "<group>"; };
+		57807890277777A70017586E /* irid_palette.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_palette.c; sourceTree = "<group>"; };
+		57807891277777A70017586E /* irid_color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_color.c; sourceTree = "<group>"; };
+		57807892277777A70017586E /* irid_symmetry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = irid_symmetry.c; sourceTree = "<group>"; };
+		57807893277777A70017586E /* irid_tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_tile.h; sourceTree = "<group>"; };
+		57807894277777A70017586E /* irid_stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irid_stroke.h; sourceTree = "<group>"; };
+		578078A7277777B00017586E /* irid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = irid.c; path = ../irid.c; sourceTree = "<group>"; };
+		578078A8277777B00017586E /* irid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = irid.h; path = ../irid.h; sourceTree = "<group>"; };
+		579127432778F60000EE3A74 /* irid_sim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irid_sim.h; sourceTree = "<group>"; };
+		579127442778F60000EE3A74 /* irid_sim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = irid_sim.c; sourceTree = "<group>"; };
+		57D052A92778D18F00070C4C /* irid_tesselate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irid_tesselate.h; sourceTree = "<group>"; };
+		57D052AA2778D18F00070C4C /* irid_tesselate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = irid_tesselate.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5780782627772D560017586E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		577C7C682778B717008202DD /* output */ = {
+			isa = PBXGroup;
+			children = (
+				577C7C692778B723008202DD /* irid_render.h */,
+				577C7C6A2778B723008202DD /* irid_render.c */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
+		5780781F27772D560017586E = {
+			isa = PBXGroup;
+			children = (
+				578078A7277777B00017586E /* irid.c */,
+				578078A8277777B00017586E /* irid.h */,
+				57807883277777A70017586E /* src */,
+				5780782927772D560017586E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5780782927772D560017586E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5780782827772D560017586E /* libirid.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57807883277777A70017586E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				579127422778F5F500EE3A74 /* sim */,
+				57D052A82778D18000070C4C /* decor */,
+				577C7C682778B717008202DD /* output */,
+				57807884277777A70017586E /* core */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		57807884277777A70017586E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				57807891277777A70017586E /* irid_color.c */,
+				57807888277777A70017586E /* irid_color.h */,
+				57807887277777A70017586E /* irid_grid.c */,
+				5780788D277777A70017586E /* irid_grid.h */,
+				5780788E277777A70017586E /* irid_layer.c */,
+				57807886277777A70017586E /* irid_layer.h */,
+				57807890277777A70017586E /* irid_palette.c */,
+				5780788A277777A70017586E /* irid_palette.h */,
+				57807885277777A70017586E /* irid_spline.c */,
+				5780788F277777A70017586E /* irid_spline.h */,
+				5780788B277777A70017586E /* irid_stroke.c */,
+				57807894277777A70017586E /* irid_stroke.h */,
+				57807892277777A70017586E /* irid_symmetry.c */,
+				57807889277777A70017586E /* irid_symmetry.h */,
+				5780788C277777A70017586E /* irid_tile.c */,
+				57807893277777A70017586E /* irid_tile.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		579127422778F5F500EE3A74 /* sim */ = {
+			isa = PBXGroup;
+			children = (
+				579127432778F60000EE3A74 /* irid_sim.h */,
+				579127442778F60000EE3A74 /* irid_sim.c */,
+			);
+			path = sim;
+			sourceTree = "<group>";
+		};
+		57D052A82778D18000070C4C /* decor */ = {
+			isa = PBXGroup;
+			children = (
+				57D052A92778D18F00070C4C /* irid_tesselate.h */,
+				57D052AA2778D18F00070C4C /* irid_tesselate.c */,
+			);
+			path = decor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5780782427772D560017586E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5780789D277777A70017586E /* irid_grid.h in Headers */,
+				57807896277777A70017586E /* irid_layer.h in Headers */,
+				577C7C6B2778B723008202DD /* irid_render.h in Headers */,
+				578078A3277777A70017586E /* irid_tile.h in Headers */,
+				5780789A277777A70017586E /* irid_palette.h in Headers */,
+				578078AA277777B00017586E /* irid.h in Headers */,
+				57807899277777A70017586E /* irid_symmetry.h in Headers */,
+				578078A4277777A70017586E /* irid_stroke.h in Headers */,
+				579127452778F60000EE3A74 /* irid_sim.h in Headers */,
+				57D052AB2778D18F00070C4C /* irid_tesselate.h in Headers */,
+				57807898277777A70017586E /* irid_color.h in Headers */,
+				5780789F277777A70017586E /* irid_spline.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5780782727772D560017586E /* irid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5780782C27772D560017586E /* Build configuration list for PBXNativeTarget "irid" */;
+			buildPhases = (
+				5780782427772D560017586E /* Headers */,
+				5780782527772D560017586E /* Sources */,
+				5780782627772D560017586E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = irid;
+			productName = irid;
+			productReference = 5780782827772D560017586E /* libirid.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5780782027772D560017586E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5780782727772D560017586E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5780782327772D560017586E /* Build configuration list for PBXProject "irid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5780781F27772D560017586E;
+			productRefGroup = 5780782927772D560017586E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5780782727772D560017586E /* irid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5780782527772D560017586E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57807895277777A70017586E /* irid_spline.c in Sources */,
+				578078A1277777A70017586E /* irid_color.c in Sources */,
+				57D052AC2778D18F00070C4C /* irid_tesselate.c in Sources */,
+				578078A0277777A70017586E /* irid_palette.c in Sources */,
+				578078A9277777B00017586E /* irid.c in Sources */,
+				5780789E277777A70017586E /* irid_layer.c in Sources */,
+				578078A2277777A70017586E /* irid_symmetry.c in Sources */,
+				579127462778F60000EE3A74 /* irid_sim.c in Sources */,
+				5780789B277777A70017586E /* irid_stroke.c in Sources */,
+				577C7C6C2778B723008202DD /* irid_render.c in Sources */,
+				5780789C277777A70017586E /* irid_tile.c in Sources */,
+				57807897277777A70017586E /* irid_grid.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5780782A27772D560017586E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5780782B27772D560017586E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5780782D27772D560017586E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZJZ9TNW24;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		5780782E27772D560017586E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZJZ9TNW24;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5780782327772D560017586E /* Build configuration list for PBXProject "irid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5780782A27772D560017586E /* Debug */,
+				5780782B27772D560017586E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5780782C27772D560017586E /* Build configuration list for PBXNativeTarget "irid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5780782D27772D560017586E /* Debug */,
+				5780782E27772D560017586E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5780782027772D560017586E /* Project object */;
+}
