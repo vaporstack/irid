@@ -11,19 +11,35 @@
 
 IridPalette* irid_palette_create(void)
 {
-	return NULL;
+	IridPalette* pal = calloc(1, sizeof(IridPalette));
+
+	return pal;
 }
 
-int irid_palette_add(void* color)
+int irid_palette_add(IridPalette* pal, IridColor* color)
 {
-	return -1;
+	pal->num++;
+	if (!pal->data)
+	{
+		pal->data = calloc(1, sizeof(IridColor));
+	}
+	else
+	{
+
+		pal->data = realloc(pal->data, sizeof(IColor) * pal->num);
+	}
+	pal->data[pal->num - 1] = color;
+	return pal->num;
 }
+
 int irid_palette_getn(IridPalette* pal)
 {
-	return -1;
+	return pal->num;
 }
 
 void irid_palette_destroy(IridPalette* pal)
 {
+	if (pal->data)
+		free(pal->data);
 	free(pal);
 }

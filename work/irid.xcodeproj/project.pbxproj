@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577661552783A6030003EFEF /* irid_point.h in Headers */ = {isa = PBXBuildFile; fileRef = 577661532783A6030003EFEF /* irid_point.h */; };
+		577661562783A6030003EFEF /* irid_point.c in Sources */ = {isa = PBXBuildFile; fileRef = 577661542783A6030003EFEF /* irid_point.c */; };
+		577661592783A7150003EFEF /* irid_line.h in Headers */ = {isa = PBXBuildFile; fileRef = 577661572783A7150003EFEF /* irid_line.h */; };
+		5776615A2783A7150003EFEF /* irid_line.c in Sources */ = {isa = PBXBuildFile; fileRef = 577661582783A7150003EFEF /* irid_line.c */; };
 		577C7C6B2778B723008202DD /* irid_render.h in Headers */ = {isa = PBXBuildFile; fileRef = 577C7C692778B723008202DD /* irid_render.h */; };
 		577C7C6C2778B723008202DD /* irid_render.c in Sources */ = {isa = PBXBuildFile; fileRef = 577C7C6A2778B723008202DD /* irid_render.c */; };
 		57807895277777A70017586E /* irid_spline.c in Sources */ = {isa = PBXBuildFile; fileRef = 57807885277777A70017586E /* irid_spline.c */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		577661532783A6030003EFEF /* irid_point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irid_point.h; sourceTree = "<group>"; };
+		577661542783A6030003EFEF /* irid_point.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = irid_point.c; sourceTree = "<group>"; };
+		577661572783A7150003EFEF /* irid_line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irid_line.h; sourceTree = "<group>"; };
+		577661582783A7150003EFEF /* irid_line.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = irid_line.c; sourceTree = "<group>"; };
 		577C7C692778B723008202DD /* irid_render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = irid_render.h; sourceTree = "<group>"; };
 		577C7C6A2778B723008202DD /* irid_render.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = irid_render.c; sourceTree = "<group>"; };
 		5780782827772D560017586E /* libirid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libirid.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +124,10 @@
 			children = (
 				57807891277777A70017586E /* irid_color.c */,
 				57807888277777A70017586E /* irid_color.h */,
+				577661532783A6030003EFEF /* irid_point.h */,
+				577661542783A6030003EFEF /* irid_point.c */,
+				577661572783A7150003EFEF /* irid_line.h */,
+				577661582783A7150003EFEF /* irid_line.c */,
 				57807887277777A70017586E /* irid_grid.c */,
 				5780788D277777A70017586E /* irid_grid.h */,
 				5780788E277777A70017586E /* irid_layer.c */,
@@ -167,7 +179,9 @@
 				578078AA277777B00017586E /* irid.h in Headers */,
 				57807899277777A70017586E /* irid_symmetry.h in Headers */,
 				578078A4277777A70017586E /* irid_stroke.h in Headers */,
+				577661592783A7150003EFEF /* irid_line.h in Headers */,
 				579127452778F60000EE3A74 /* irid_sim.h in Headers */,
+				577661552783A6030003EFEF /* irid_point.h in Headers */,
 				57D052AB2778D18F00070C4C /* irid_tesselate.h in Headers */,
 				57807898277777A70017586E /* irid_color.h in Headers */,
 				5780789F277777A70017586E /* irid_spline.h in Headers */,
@@ -241,7 +255,9 @@
 				5780789B277777A70017586E /* irid_stroke.c in Sources */,
 				577C7C6C2778B723008202DD /* irid_render.c in Sources */,
 				5780789C277777A70017586E /* irid_tile.c in Sources */,
+				5776615A2783A7150003EFEF /* irid_line.c in Sources */,
 				57807897277777A70017586E /* irid_grid.c in Sources */,
+				577661562783A6030003EFEF /* irid_point.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

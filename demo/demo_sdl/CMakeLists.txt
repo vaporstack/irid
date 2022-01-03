@@ -25,7 +25,7 @@ add_executable(irid_demo_sdl ${sources})
 # (test_wsh PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../contrib/include)
 target_include_directories(
   irid_demo_sdl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../../contrib/deps
-                       /usr/local/include)
+                       /opt/homebrew/include/SDL2 /usr/local/include)
 
 link_directories(${CMAKE_SOURCE_DIR}/build)
 

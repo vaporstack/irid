@@ -13,6 +13,7 @@
 #include <string.h>
 
 #define IRID_LOG_MAX 512
+#define DEBUG
 
 void irid_log(char* format, ...)
 {

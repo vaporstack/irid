@@ -17,9 +17,9 @@ static int test_map_unmap(IridGrid* g)
 	{
 		long x = rand() % TEST_GRID_W;
 		long y = rand() % TEST_GRID_H;
-		irid_log("input: %llu, %llu\n", x, y);
+		irid_log("input: %llu, %llu", x, y);
 		long index = irid_grid_index(g, x, y);
-		irid_log("index: %llu\n", index);
+		irid_log("index: %llu", index);
 
 		long ux, uy;
 		ux = uy = 0;
@@ -30,7 +30,7 @@ static int test_map_unmap(IridGrid* g)
 			irid_log("test failed. unmap does not match to map.\n");
 			return 1;
 		}
-		irid_log("unindex: %llu, %llu\n", ux, uy);
+		irid_log("unindex: %llu, %llu", ux, uy);
 	}
 }
 

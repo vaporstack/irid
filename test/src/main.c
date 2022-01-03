@@ -11,6 +11,8 @@
 #include <irid/irid.h>
 
 extern int test_grid(void);
+extern int test_palette(void);
+extern int test_color(void);
 
 int main(int argc, char** argv)
 {
@@ -19,6 +21,7 @@ int main(int argc, char** argv)
 	irid_destroy(rec);
 
 	test_grid();
-
+	test_palette();
+	test_color();
 	return 0;
 }

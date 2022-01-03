@@ -8,8 +8,11 @@
 #ifndef irid_h
 #define irid_h
 
+#include "src/core/irid_color.h"
 #include "src/core/irid_grid.h"
 #include "src/core/irid_layer.h"
+#include "src/core/irid_palette.h"
+#include "src/core/irid_point.h"
 #include "src/core/irid_tile.h"
 #include "src/util/irid_log.h"
 

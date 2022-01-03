@@ -9,7 +9,7 @@ set(${project_name}_VERSION_MINOR 0)
 set(${project_name}_VERSION_PATCH 1)
 
 option(BuildGLFWDemo "Build demo (GLFW)" OFF)
-option(BuildSDLDemo "Build demo (SDL2)" ON)
+option(BuildSDLDemo "Build demo (SDL2)" OFF)
 option(BuildOFDemo "Build demo (Openframeworks)" OFF)
 
 find_package(LibGLFW)

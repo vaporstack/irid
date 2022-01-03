@@ -13,6 +13,12 @@
 
 #include "irid_tile.h"
 
+typedef struct IridMovementConstraints
+{
+	int restrict_x;
+	int restrict_y;
+} IridMovementConstraints;
+
 typedef struct IridGrid
 {
 	int	   width;
@@ -21,6 +27,7 @@ typedef struct IridGrid
 	bool	   mirror_x;
 	bool	   mirror_y;
 	IridTile** tiles;
+	void*	   constraints;
 
 } IridGrid;
 
@@ -53,6 +60,10 @@ long irid_grid_cell_from_coords_scaled(IridGrid* grid, double x, double y);
 //	ui
 void irid_grid_set_scale(IridGrid* grid, double x);
 
+//	tile ops
+// void irid_grid_reflect(Irid)
+//	simulation
+void irid_grid_move(IridGrid* grid, long ax, long ay, long bx, long by, long* rx, long* ry);
 // void irid_grid_tile_action(IridGrid* grid, long x, long y, long action, void* user);
 
 //	tile manipulation

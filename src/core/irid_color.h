@@ -10,19 +10,22 @@
 
 typedef struct
 {
-	float r;
-	float g;
-	float b;
-	float a;
-} IColor;
-
-typedef struct
-{
 	int r;
 	int g;
 	int b;
 	int a;
-} IColorShort;
+} IColor;
+
+typedef IColor IColor8;
+typedef IColor IridColor;
+
+typedef struct
+{
+	float r;
+	float g;
+	float b;
+	float a;
+} IColor16;
 
 typedef struct
 {
@@ -30,28 +33,28 @@ typedef struct
 	double g;
 	double b;
 	double a;
-} IColor16;
+} IColor32;
 
 typedef struct
 {
 	double r; // a fraction between 0 and 1
 	double g; // a fraction between 0 and 1
 	double b; // a fraction between 0 and 1
-} rgb;
+} irid_rgb;
 
 typedef struct
 {
 	double h; // angle in degrees
 	double s; // a fraction between 0 and 1
 	double v; // a fraction between 0 and 1
-} hsv;
+} irid_hsv;
 
 //	hue is 0-360
-hsv rgb2hsv(rgb in);
-rgb hsv2rgb(hsv in);
+irid_hsv irid_rgb2hsv(irid_rgb in);
+irid_rgb irid_hsv2rgb(irid_hsv in);
 
+int  irid_color_clamp(IColor* col);
 void irid_color_8_clear(IColor* col);
 void irid_color_16_clear(IColor16* col);
-
 
 #endif /* irid_color_h */

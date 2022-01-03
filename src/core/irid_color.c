@@ -7,12 +7,35 @@
 
 #include "irid_color.h"
 
-
 #include <math.h>
 
-hsv rgb2hsv(rgb in)
+int irid_color_clamp(IColor* col)
 {
-	hsv    out;
+	IColor test = *col;
+	if (col->r < 0)
+		col->r = 0;
+	if (col->r > 255)
+		col->r = 255;
+	if (col->g < 0)
+		col->g = 0;
+	if (col->g > 255)
+		col->g = 255;
+	if (col->b < 0)
+		col->b = 0;
+	if (col->b > 255)
+		col->b = 255;
+
+	if (col->r == test.r &&
+	    col->g == test.g &&
+	    col->b == test.b)
+		return 0;
+
+	return 1;
+}
+
+irid_hsv irid_rgb2hsv(irid_rgb in)
+{
+	irid_hsv    out;
 	double min, max, delta;
 
 	min = in.r < in.g ? in.r : in.g;
@@ -31,7 +54,7 @@ hsv rgb2hsv(rgb in)
 	}
 	if (max >
 	    0.0)
-	{ // NOTE: if Max is == 0, this divide would cause a crash
+	{			       // NOTE: if Max is == 0, this divide would cause a crash
 		out.s = (delta / max); // s
 	}
 	else
@@ -42,7 +65,7 @@ hsv rgb2hsv(rgb in)
 		out.h = NAN; // its now undefined
 		return out;
 	}
-	if (in.r >= max) // > is bogus, just keeps compilor happy
+	if (in.r >= max)		       // > is bogus, just keeps compilor happy
 		out.h = (in.g - in.b) / delta; // between yellow & magenta
 	else if (in.g >= max)
 		out.h = 2.0 + (in.b - in.r) / delta; // between cyan & yellow
@@ -57,11 +80,11 @@ hsv rgb2hsv(rgb in)
 	return out;
 }
 
-rgb hsv2rgb(hsv in)
+irid_rgb irid_hsv2rgb(irid_hsv in)
 {
 	double hh, p, q, t, ff;
 	long   i;
-	rgb    out;
+	irid_rgb    out;
 
 	if (in.s <= 0.0)
 	{ // < is bogus, just shuts up warnings

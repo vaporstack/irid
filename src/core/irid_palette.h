@@ -12,12 +12,14 @@
 
 typedef struct IridPalette
 {
-	int    num;
-	void** colors;
+	int	    num;
+	int	    pos;
+	IridColor** data;
+
 } IridPalette;
 
 IridPalette* irid_palette_create(void);
-int	     irid_palette_add(void* color);
+int	     irid_palette_add(IridPalette* pal, IColor* color);
 int	     irid_palette_getn(IridPalette*);
 void	     irid_palette_destroy(IridPalette*);
 
